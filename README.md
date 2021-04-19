@@ -1,13 +1,11 @@
-# demo
-
-> test
+# React-Input-Kitin
 
 [![NPM](https://img.shields.io/npm/v/demo.svg)](https://www.npmjs.com/package/demo) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save demo
+npm install --save react-input-kitin
 ```
 
 ## Usage
@@ -15,12 +13,12 @@ npm install --save demo
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'demo'
-import 'demo/dist/index.css'
+import Form from 'react-input-kitin';
+import 'demo/dist/index.css';
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Form type={'BHSK'} />
   }
 }
 ```
