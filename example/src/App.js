@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'demo'
+import { Form } from 'demo';
 import 'demo/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Form type={'CAR'} />
 }
 
 export default App
