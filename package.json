@@ -4,7 +4,7 @@
   "description": "test",
   "author": "hoangkhanh",
   "license": "MIT",
-  "repository": "KhanhKitin/demo",
+  "repository": "KhanhKitin/input-ui-kitx",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
