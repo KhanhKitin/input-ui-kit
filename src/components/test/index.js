@@ -1,13 +1,19 @@
 import React, { useState } from 'react'
-import { Form, Container } from 'react-bootstrap';
+import { Form, Container, Button } from 'react-bootstrap';
 import FLInput from '../libs/flinput';
 import FLDate from '../libs/flinput/date';
 import style from '../../styles.module.css';
 
 
-export default function index() {
+export default function index(props) {
   const [address, setAddress] = useState('');
   const [date, setDate] = useState('');
+
+  const clearData = () => {
+    setAddress('');
+    setDate(null);
+  } 
+
   return (
     <Container className={style.mt_kt}>
       <Form>
@@ -26,6 +32,12 @@ export default function index() {
               label={'Ngày đi'}
               required={false}
             />
+            <div className={style.mt_kt} />
+             <Button
+          onClick={() => props.onSubmit({address, date})}
+        > 
+          OK
+        </Button>
       </Form>
     </Container>
   )
