@@ -14,7 +14,7 @@ npm install --save react-input-kitin
 import React, { Component } from 'react'
 
 import Form from 'react-input-kitin';
-import 'demo/dist/index.css';
+import 'react-input-kitin/dist/index.css';
 
 class Example extends Component {
   render() {
